@@ -100,12 +100,12 @@ def len_mod(subject, citcon):
 # MUTATION OF ROUTE'S INTERNAL CITIES
 def inter_mod(subject, citcon):
     track = subject.track
-    t_length = subject.length
-    if t_length <= 2:
+    t_length = len(track)
+    if t_length <= 3:
         mutant = town.Bus(subject.start, subject.seats, subject.length)
         mutant.track = track
     else:
-        modified = ran.randint(1, t_length - 2)
+        modified = ran.randint(1, (t_length - 1))
         shortened = [track[k] for k in range(modified)]
         required = t_length - len(shortened)
         m = 0
@@ -123,8 +123,8 @@ def inter_mod(subject, citcon):
             if kill == True:
                 break
             m += 1
-    mutant = town.Bus(shortened[0], subject.seats, len(shortened))
-    mutant.track = shortened   
+        mutant = town.Bus(shortened[0], subject.seats, len(shortened))
+        mutant.track = shortened
     return mutant
 
 # MUTATION OF ROUTE'S BOUNDARY CITIES
