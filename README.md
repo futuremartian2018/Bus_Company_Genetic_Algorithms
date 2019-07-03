@@ -9,7 +9,7 @@ Graph that represents cities on a map. Green lines represent connections between
 ![Fit](https://user-images.githubusercontent.com/37414943/60082839-e1914b80-9734-11e9-9d95-ee1c39032d83.JPG)
 
 # Short description
-There a are few different companies and each of them has the same number of buses. Each bus has a limited number of seats, and therefore can travel with a limited number of passengers. Bus travels along its route which consists of cities and connections beetweend those cities. Each connection is different, which means they have a different length and weight - that results in different travel cost. In every generation that route is mutated acording to one randomly selected method of mutation.
+There a are few different companies and each of them has the same number of buses. Each bus has a limited number of seats, and therefore can travel with a limited number of passengers. Bus travels along its route which consists of cities and connections beetween those cities. Each connection is different, which means they have a different length and weight - that results in different travel cost. In every generation that route is mutated acording to one randomly selected method of mutation.
 
 ![image](https://user-images.githubusercontent.com/37414943/60104132-1ca97400-9761-11e9-965c-68dcb8b51db1.png)
 
